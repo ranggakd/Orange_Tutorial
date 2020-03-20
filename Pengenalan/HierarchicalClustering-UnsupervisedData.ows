@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(0, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="Data Info" position="(300, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" title="Data Info" version="" />
+		<node id="2" name="Distances" position="(300, 150)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owdistances.OWDistances" title="Distances" version="" />
+		<node id="3" name="Hierarchical Clustering" position="(450, 150)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owhierarchicalclustering.OWHierarchicalClustering" title="Hierarchical Clustering" version="" />
+		<node id="4" name="Data Table" position="(600, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owtable.OWDataTable" title="Data Table" version="" />
+		<node id="5" name="Scatter Plot" position="(600, 300)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" title="Scatter Plot" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Distances" sink_node_id="3" source_channel="Distances" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Selected Data" source_node_id="3" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="5" source_channel="Selected Data" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('D:/Documents/Kuliah Akademik/Semester 6/ASDOS PSC/datasets/Wholesale customers data.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 8, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': 'D:/Documents/Kuliah Akademik/Semester 6/ASDOS PSC/datasets', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\x9b\x00\x00\x00\xa1\x00\x00\x02\xc6\x00\x00\x01\xfd\x00\x00\x01\xa3\x00\x00\x00\xc0\x00\x00\x02\xbe\x00\x00\x01\xf5\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x02V\x00\x00\x00m\x00\x00\x031\x00\x00\x02\x1a\x00\x00\x02^\x00\x00\x00\x8c\x00\x00\x03)\x00\x00\x02\x12\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'autocommit': True, 'axis': 0, 'controlAreaVisible': True, 'metric_idx': 0, 'normalized_dist': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03\xeb\x00\x00\x00\x99\x00\x00\x04\xab\x00\x00\x01\xab\x00\x00\x03\xf3\x00\x00\x00\xb8\x00\x00\x04\xa3\x00\x00\x01\xa3\x00\x00\x00\x00\x00\x00\x00\x00\x05V', '__version__': 2}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWBcAAABhbm5vdGF0aW9uX2lmX2VudW1lcmF0ZXEBWAsAAABFbnVtZXJhdGlvbnECWBMA
+AABhbm5vdGF0aW9uX2lmX25hbWVzcQNYBAAAAE5hbWVxBFgPAAAAYXBwZW5kX2NsdXN0ZXJzcQWI
+WAoAAABhdXRvY29tbWl0cQaIWAwAAABjbHVzdGVyX25hbWVxB1gHAAAAQ2x1c3RlcnEIWAwAAABj
+bHVzdGVyX3JvbGVxCUsBWBIAAABjb250cm9sQXJlYVZpc2libGVxCohYCQAAAGN1dF9yYXRpb3EL
+Y251bXB5LmNvcmUubXVsdGlhcnJheQpzY2FsYXIKcQxjbnVtcHkKZHR5cGUKcQ1YAgAAAGY4cQ5L
+AEsBh3EPUnEQKEsDWAEAAAA8cRFOTk5K/////0r/////SwB0cRJiQwgsiMkVxARSQHEThnEUUnEV
+WAcAAABsaW5rYWdlcRZLBFgJAAAAbWF4X2RlcHRocRdLBFgHAAAAcHJ1bmluZ3EYSwBYEwAAAHNh
+dmVkV2lkZ2V0R2VvbWV0cnlxGUMyAdnQywACAAAAAAGZAAAAbQAABDIAAAKqAAABoQAAAIwAAAQq
+AAACogAAAAAAAAAABVZxGlgQAAAAc2VsZWN0aW9uX21ldGhvZHEbSwJYBQAAAHRvcF9ucRxLAlgL
+AAAAem9vbV9mYWN0b3JxHUr6////WAsAAABfX3ZlcnNpb25fX3EeSwFYFAAAAF9fc2Vzc2lvbl9z
+dGF0ZV9kYXRhcR99cSBYBwAAAHZlcnNpb25xIUsASwBLAIdxInNYEAAAAGNvbnRleHRfc2V0dGlu
+Z3NxI11xJGNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxJSmBcSZ9cScoWAQAAAB0aW1l
+cShHQdedKtWk01dYBgAAAHZhbHVlc3EpfXEqKFgKAAAAYW5ub3RhdGlvbnErWAsAAABFbnVtZXJh
+dGlvbnEsSv7///+GcS1oHksBdVgKAAAAYXR0cmlidXRlc3EufXEvKFgHAAAAQ2hhbm5lbHEwSwJY
+BgAAAFJlZ2lvbnExSwJYBQAAAEZyZXNocTJLAlgEAAAATWlsa3EzSwJYBwAAAEdyb2NlcnlxNEsC
+WAYAAABGcm96ZW5xNUsCWBAAAABEZXRlcmdlbnRzX1BhcGVycTZLAlgKAAAARGVsaWNhc3NlbnE3
+SwJ1WAUAAABtZXRhc3E4fXE5dWJhdS4=
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgOAAAAY29sb3JfYnlfY2xhc3NxAohYEgAAAGNvbnRy
+b2xBcmVhVmlzaWJsZXEDiFgOAAAAZGlzdF9jb2xvcl9SR0JxBChL3EvcS9xL/3RxBVgTAAAAc2F2
+ZWRXaWRnZXRHZW9tZXRyeXEGQzIB2dDLAAIAAAAAAGwAAABIAAAFCgAAAnQAAAB0AAAAZwAABQIA
+AAJsAAAAAAAAAAAFVnEHWAsAAABzZWxlY3Rfcm93c3EIiFgNAAAAc2VsZWN0ZWRfY29sc3EJXXEK
+WA0AAABzZWxlY3RlZF9yb3dzcQtdcQxYFQAAAHNob3dfYXR0cmlidXRlX2xhYmVsc3ENiFgSAAAA
+c2hvd19kaXN0cmlidXRpb25zcQ6IWAsAAABfX3ZlcnNpb25fX3EPSwFYEAAAAGNvbnRleHRfc2V0
+dGluZ3NxEF1xEShjb3Jhbmdld2lkZ2V0LnNldHRpbmdzCkNvbnRleHQKcRIpgXETfXEUKFgEAAAA
+dGltZXEVR0HXnSsPf/4xWAYAAAB2YWx1ZXNxFn1xF2gPSwFzWAoAAABhdHRyaWJ1dGVzcRh9cRko
+WAcAAABDaGFubmVscRpLAlgGAAAAUmVnaW9ucRtLAlgFAAAARnJlc2hxHEsCWAQAAABNaWxrcR1L
+AlgHAAAAR3JvY2VyeXEeSwJYBgAAAEZyb3plbnEfSwJYEAAAAERldGVyZ2VudHNfUGFwZXJxIEsC
+WAoAAABEZWxpY2Fzc2VucSFLAlgHAAAAQ2x1c3RlcnEiXXEjKFgCAAAAQzFxJFgCAAAAQzJxJWV1
+WAUAAABtZXRhc3EmfXEndWJoEimBcSh9cSkoaBVHQdedKw9l6cZoFn1xKmgPSwFzaBh9cSsoaBpL
+AmgbSwJoHEsCaB1LAmgeSwJoH0sCaCBLAmghSwJoIl1xLChYAgAAAEMxcS1YAgAAAEMycS5YAgAA
+AEMzcS9ldWgmfXEwdWJoEimBcTF9cTIoaBVHQdedKw8dweVoFn1xM2gPSwFzaBh9cTQoaBpLAmgb
+SwJoHEsCaB1LAmgeSwJoH0sCaCBLAmghSwJoIl1xNShYAgAAAEMxcTZYAgAAAEMycTdYAgAAAEMz
+cThYAgAAAEM0cTlldWgmfXE6dWJldS4=
+</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgLAAAAYXV0b19zYW1wbGVxAohYEgAAAGNvbnRyb2xB
+cmVhVmlzaWJsZXEDiFgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEEQzIB2dDLAAIAAAAAAnMAAAA+
+AAAFBwAAAmkAAAJ7AAAAXQAABP8AAAJhAAAAAAAAAAAFVnEFWAkAAABzZWxlY3Rpb25xBk5YEQAA
+AHRvb2x0aXBfc2hvd3NfYWxscQeIWAUAAABncmFwaHEIfXEJKFgLAAAAYWxwaGFfdmFsdWVxCkuA
+WA0AAABjbGFzc19kZW5zaXR5cQuIWAsAAABqaXR0ZXJfc2l6ZXEMSwBYEwAAAGxhYmVsX29ubHlf
+c2VsZWN0ZWRxDYlYFgAAAG9ydGhvbm9ybWFsX3JlZ3Jlc3Npb25xDolYCwAAAHBvaW50X3dpZHRo
+cQ9LClgJAAAAc2hvd19ncmlkcRCJWAsAAABzaG93X2xlZ2VuZHERiFgNAAAAc2hvd19yZWdfbGlu
+ZXESiXVYCwAAAF9fdmVyc2lvbl9fcRNLBFgQAAAAY29udGV4dF9zZXR0aW5nc3EUXXEVY29yYW5n
+ZXdpZGdldC5zZXR0aW5ncwpDb250ZXh0CnEWKYFxF31xGChYBAAAAHRpbWVxGUdB150rkhgYEVgG
+AAAAdmFsdWVzcRp9cRsoWAoAAABhdHRyX2NvbG9ycRxYBwAAAENsdXN0ZXJxHUtlhnEeWAoAAABh
+dHRyX2xhYmVscR9OSv7///+GcSBYCgAAAGF0dHJfc2hhcGVxIWgdS2WGcSJYCQAAAGF0dHJfc2l6
+ZXEjTkr+////hnEkWAYAAABhdHRyX3hxJVgHAAAAQ2hhbm5lbHEmS2aGcSdYBgAAAGF0dHJfeXEo
+WAYAAABSZWdpb25xKUtmhnEqaAh9cStoE0sEdVgKAAAAYXR0cmlidXRlc3EsfXEtKGgmSwJoKUsC
+WAUAAABGcmVzaHEuSwJYBAAAAE1pbGtxL0sCWAcAAABHcm9jZXJ5cTBLAlgGAAAARnJvemVucTFL
+AlgQAAAARGV0ZXJnZW50c19QYXBlcnEySwJYCgAAAERlbGljYXNzZW5xM0sCaB1LAXVYBQAAAG1l
+dGFzcTR9cTV1YmF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
